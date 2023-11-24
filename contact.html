@@ -14,7 +14,29 @@
   <meta name="author" content="" />
 
   <title>My Portfolio</title>
+<script>
+function validateForm() {
+var input1 = document.getElementById("inputName").value ;
+ var input2 = document.getElementById("inputNumber").value ;
+var input3 = document.getElementById("inputEmail").value ;
+var input4 = document.getElementById("inputMessage").value ;
 
+if (input1 === ""){
+ alert("Please enter your name!") ;
+  }
+if (input2 === "") {
+    alert("Please enter your number!") ;
+  }
+if (input3 === "") {
+    alert("Please enter your email!") ;
+  }
+if (input4 === "") {
+    alert("Please enter your message!") ;
+  }
+}
+
+
+</script>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -92,36 +114,28 @@
           <div class="form_container">
             <div class="heading_container">
               <h2>
-                Contact Us
+                Contact Me
               </h2>
             </div>
-            <form action="">
+          <form action="">
               <div>
-                <input type="text" placeholder="Your Name" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone Number" />
+                <input type="text"  id="inputName" placeholder="Your Name" />
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="text" id="inputNumber" placeholder="Phone Number" />
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                <input type="email" id="inputEmail" placeholder="Email" />
               </div>
-              <div class="btn_box">
-                <button>
-                  SEND
-                </button>
+              <div>
+                <input type="text" id="inputMessage" class="message-box" placeholder="Message" />
               </div>
+              <input type="submit" value="Submit" onclick="validateForm()">
             </form>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="map_container">
-            <div class="map">
-              <div id="googleMap"></div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
