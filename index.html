@@ -35,13 +35,22 @@ if (input4 === "") {
   }
 }
 
-function moveRight(element) {
-      element.style.transform = 'translateX(10px)'; // Move 10 pixels to the right
+document.addEventListener('DOMContentLoaded', function() {
+    var picElements = document.querySelectorAll('.itemqt.pic1, .itemqt.pic2, .itemqt.pic3');
+
+    function moveRight() {
+      this.style.transform = 'translateX(10px)';
     }
 
-function resetPosition(element) {
-      element.style.transform = 'translateX(0)';
+    function resetPosition() {
+      this.style.transform = 'translateX(0)';
     }
+
+    picElements.forEach(function(element) {
+      element.addEventListener('mouseover', moveRight);
+      element.addEventListener('mouseout', resetPosition);
+    });
+  });
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
