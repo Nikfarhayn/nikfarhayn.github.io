@@ -35,7 +35,21 @@ if (input4 === "") {
   }
 }
 
+var itemqtList = document.querySelectorAll('.itemqt');
 
+    // Add event listener for mousemove
+    itemqtList.forEach(function(itemqt) {
+      itemqt.addEventListener('mousemove', function () {
+        // Move the box to the right by 10 pixels
+        itemqt.style.transform = 'translateX(10px)';
+      });
+
+      // Add event listener for mouseout to reset the position
+      itemqt.addEventListener('mouseout', function () {
+        // Reset the position
+        itemqt.style.transform = 'translateX(0)';
+      });
+    });
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
