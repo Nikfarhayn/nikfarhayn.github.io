@@ -265,7 +265,8 @@ a:focus {
 .slider_section .detail-box .btn-box .btn1 {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #f89646;
+  background: rgb(246,71,111);
+  background: linear-gradient(90deg, rgba(246,71,111,1) 41%, rgba(248,252,70,1) 73%);
   color: #ffffff;
   border-radius: 0;
   border: 1px solid #f89646;
