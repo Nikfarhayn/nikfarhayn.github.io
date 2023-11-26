@@ -35,20 +35,13 @@ if (input4 === "") {
   }
 }
 
-var itemqtList = document.querySelectorAll('.itemqt');
+function moveRight(element) {
+      element.style.transform = 'translateX(10px)'; // Move 10 pixels to the right
+    }
 
-  itemqtList.forEach(function(itemqt) {
-    itemqt.addEventListener('mouseover', function () {
-      // Move the box to the right by 10 pixels
-      itemqt.style.transform = 'translateX(10px)';
-    });
-
-    // Add event listener for mouseout to reset the position
-    itemqt.addEventListener('mouseout', function () {
-      // Reset the position
-      itemqt.style.transform = 'translateX(0)';
-    });
-  });
+    function resetPosition(element) {
+      element.style.transform = 'translateX(0)';
+    }
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -212,12 +205,18 @@ var itemqtList = document.querySelectorAll('.itemqt');
     <!-- end slider section -->
   <body>
   <div class="qt-container">
-   <div class="itemqt pic1"><img class="pics" src="PHOTO1.jpg"></div>
-   <div class="itemqt quote">Do something today that your future self will thank you for.</div>
-   <div class="itemqt pic2"><img class="pics" src="PHOTO2.jpg"></div>
-   <div class="itemqt quote">Success comes from what you do constantly.</div>
-   <div class="itemqt pic3"><img class="pics" src="PHOTO3.jpg"></div>
-   <div class="itemqt quote">Focus on the step in front of you, not the whole staircase.</div>
+    <div class="itemqt pic1" onmouseover="moveRight(this)" onmouseout="resetPosition(this)">
+      <img class="pics" src="PHOTO1.jpg">
+    </div>
+    <div class="itemqt quote">Do something today that your future self will thank you for.</div>
+    <div class="itemqt pic2" onmouseover="moveRight(this)" onmouseout="resetPosition(this)">
+      <img class="pics" src="PHOTO2.jpg">
+    </div>
+    <div class="itemqt quote">Success comes from what you do constantly.</div>
+    <div class="itemqt pic3" onmouseover="moveRight(this)" onmouseout="resetPosition(this)">
+      <img class="pics" src="PHOTO3.jpg">
+    </div>
+    <div class="itemqt quote">Focus on the step in front of you, not the whole staircase.</div>
   </div>
 
   
