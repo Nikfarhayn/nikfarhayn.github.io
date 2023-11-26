@@ -885,5 +885,6 @@ margin-bottom: 20px;
   .pics {
     height: 100%;
     width: 100%;
+    border-radius: 10px;
   }
 /*# sourceMappingURL=style.css.map */
