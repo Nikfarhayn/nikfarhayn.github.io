@@ -4498,7 +4498,8 @@ input[type="button"].btn-block {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #fff;
+  background: rgb(246,71,111);
+  background: linear-gradient(90deg, rgba(246,71,111,1) 41%, rgba(248,252,70,1) 73%);
   border-color: #dee2e6 #dee2e6 #fff;
 }
 
