@@ -4573,6 +4573,14 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+ color: #c26392; 
+  background-image: -webkit-linear-gradient(0deg, #c26392 79%, #da159d 91%, #f366ad 92%); 
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
+          
+        
   
 }
 
