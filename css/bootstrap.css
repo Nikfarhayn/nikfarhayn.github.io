@@ -4574,7 +4574,7 @@ input[type="button"].btn-block {
   line-height: inherit;
   white-space: nowrap;
   background: rgb(63,94,251);
-background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,17,1) 100%);
 }
 
 .navbar-brand:hover,
