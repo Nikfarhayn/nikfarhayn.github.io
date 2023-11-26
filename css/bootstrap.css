@@ -4881,7 +4881,14 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+  color: #c26392; 
+  background-image: -webkit-linear-gradient(0deg, #c26392 79%, #da159d 91%, #f366ad 92%); 
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
+          
+        
 }
 
 .navbar-light .navbar-brand:hover,
